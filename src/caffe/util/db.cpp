@@ -1,6 +1,17 @@
 #include "caffe/util/db.hpp"
 
+#if defined _MSC_VER
+
+#include <direct.h>
+#define mkdir(x,y) mkdir((x))
+
+#else
+
+#include <sys/types.h>
 #include <sys/stat.h>
+
+#endif
+
 #include <string>
 
 namespace caffe { namespace db {

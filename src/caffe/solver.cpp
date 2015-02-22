@@ -11,6 +11,11 @@
 #include "caffe/util/math_functions.hpp"
 #include "caffe/util/upgrade_proto.hpp"
 
+// port for Win32
+#ifdef _MSC_VER
+#define snprintf sprintf_s
+#endif
+
 namespace caffe {
 
 template <typename Dtype>

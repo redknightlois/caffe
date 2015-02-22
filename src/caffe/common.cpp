@@ -2,6 +2,12 @@
 #include <cstdio>
 #include <ctime>
 
+#ifdef _MSC_VER
+#include <process.h>
+#define getpid _getpid
+#endif
+
+
 #include "caffe/common.hpp"
 #include "caffe/util/rng.hpp"
 
@@ -24,6 +30,7 @@ int64_t cluster_seedgen(void) {
     fclose(f);
 
   pid = getpid();
+  
   s = time(NULL);
   seed = abs(((s * 181) * ((pid - 83) * 359)) % 104729);
   return seed;
@@ -36,7 +43,9 @@ void GlobalInit(int* pargc, char*** pargv) {
   // Google logging.
   ::google::InitGoogleLogging(*(pargv)[0]);
   // Provide a backtrace on segfault.
-  ::google::InstallFailureSignalHandler();
+  
+  // Disabled because it fails to link.
+  //::google::InstallFailureSignalHandler();
 }
 
 #ifdef CPU_ONLY  // CPU-only Caffe.

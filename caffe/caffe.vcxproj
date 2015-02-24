@@ -223,9 +223,13 @@
     <ClInclude Include="..\include\caffe\util\math_functions.hpp" />
     <ClInclude Include="..\include\caffe\util\mkl_alternate.hpp" />
     <ClInclude Include="..\include\caffe\util\rng.hpp" />
-    <ClInclude Include="..\include\caffe\util\thread.hpp" />
     <ClInclude Include="..\include\caffe\util\upgrade_proto.hpp" />
     <ClInclude Include="..\include\caffe\vision_layers.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\caffe\proto\caffe.proto">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

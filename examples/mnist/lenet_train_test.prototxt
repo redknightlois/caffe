@@ -6,18 +6,14 @@ layer {
   top: "label"
   include {
     phase: TRAIN
+  }
   data_param {
-    source: "examples/mnist/mnist_train_lmdb"
-    backend: LMDB
+    source: "examples/mnist/mnist_train_leveldb"
+    backend: LEVELDB
     batch_size: 64
   }
   transform_param {
     scale: 0.00390625
-  }
-  data_param {
-    source: "examples/mnist/mnist_train_lmdb"
-    batch_size: 64
-    backend: LMDB
   }
 }
 layer {
@@ -27,18 +23,14 @@ layer {
   top: "label"
   include {
     phase: TEST
+  }
   data_param {
-    source: "examples/mnist/mnist_test_lmdb"
-    backend: LMDB
+    source: "examples/mnist/mnist_test_leveldb"
+    backend: LEVELDB
     batch_size: 100
   }
   transform_param {
     scale: 0.00390625
-  }
-  data_param {
-    source: "examples/mnist/mnist_test_lmdb"
-    batch_size: 100
-    backend: LMDB
   }
 }
 layer {

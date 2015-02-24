@@ -12,7 +12,7 @@ layer {
   data_param {
     source: "examples/mnist/mnist_train_lmdb"
     batch_size: 100
-    backend: LMDB
+    backend: LEVELDB
   }
 }
 layer {
@@ -29,7 +29,7 @@ layer {
   data_param {
     source: "examples/mnist/mnist_train_lmdb"
     batch_size: 100
-    backend: LMDB
+    backend: LEVELDB
   }
 }
 layer {
@@ -46,7 +46,7 @@ layer {
   data_param {
     source: "examples/mnist/mnist_test_lmdb"
     batch_size: 100
-    backend: LMDB
+    backend: LEVELDB
   }
 }
 layer {

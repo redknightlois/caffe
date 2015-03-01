@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffe", "caffe.vcxproj", "{537EF951-4B02-4103-A310-52A6F7C8D748}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffelib", "caffe.vcxproj", "{537EF951-4B02-4103-A310-52A6F7C8D748}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffe-bin", "caffe-bin.vcxproj", "{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537EF951-4B02-4103-A310-52A6F7C8D748} = {537EF951-4B02-4103-A310-52A6F7C8D748}
+	EndProjectSection
 EndProject
 Global
-	GlobalSection(CodealikeProperties) = postSolution
-		SolutionGuid = 4dd49928-01c1-4d50-955e-26da86506e63
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Release|x64 = Release|x64
@@ -18,8 +20,15 @@ Global
 		{537EF951-4B02-4103-A310-52A6F7C8D748}.Debug|x64.Build.0 = Debug|x64
 		{537EF951-4B02-4103-A310-52A6F7C8D748}.Release|x64.ActiveCfg = Release|x64
 		{537EF951-4B02-4103-A310-52A6F7C8D748}.Release|x64.Build.0 = Release|x64
+		{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}.Debug|x64.ActiveCfg = Debug|x64
+		{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}.Debug|x64.Build.0 = Debug|x64
+		{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}.Release|x64.ActiveCfg = Release|x64
+		{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(CodealikeProperties) = postSolution
+		SolutionGuid = 4dd49928-01c1-4d50-955e-26da86506e63
 	EndGlobalSection
 EndGlobal

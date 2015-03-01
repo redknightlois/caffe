@@ -225,9 +225,6 @@
     <ClCompile Include="..\src\caffe\util\db.cpp">
       <Filter>Source Files\util</Filter>
     </ClCompile>
-    <ClCompile Include="..\tools\caffe.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="..\src\caffe\layers\concat_layer.cu">

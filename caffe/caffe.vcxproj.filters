@@ -263,9 +263,6 @@
     <CudaCompile Include="..\src\caffe\layers\euclidean_loss_layer.cu">
       <Filter>Source Files\layers</Filter>
     </CudaCompile>
-    <CudaCompile Include="..\src\caffe\layers\flatten_layer.cu">
-      <Filter>Source Files\layers</Filter>
-    </CudaCompile>
     <CudaCompile Include="..\src\caffe\layers\hdf5_data_layer.cu">
       <Filter>Source Files\layers</Filter>
     </CudaCompile>
@@ -417,6 +414,15 @@
     </ClInclude>
     <ClInclude Include="..\include\caffe\util\device_alternate.hpp">
       <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\caffe\layer_factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\caffe\python_layer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\caffe\util\db.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

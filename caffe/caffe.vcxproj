@@ -181,7 +181,6 @@
     <CudaCompile Include="..\src\caffe\layers\eltwise_layer.cu" />
     <CudaCompile Include="..\src\caffe\layers\euclidean_loss_layer.cu" />
     <CudaCompile Include="..\src\caffe\layers\exp_layer.cu" />
-    <CudaCompile Include="..\src\caffe\layers\flatten_layer.cu" />
     <CudaCompile Include="..\src\caffe\layers\hdf5_data_layer.cu" />
     <CudaCompile Include="..\src\caffe\layers\hdf5_output_layer.cu" />
     <CudaCompile Include="..\src\caffe\layers\im2col_layer.cu" />
@@ -213,13 +212,16 @@
     <ClInclude Include="..\include\caffe\filler.hpp" />
     <ClInclude Include="..\include\caffe\internal_thread.hpp" />
     <ClInclude Include="..\include\caffe\layer.hpp" />
+    <ClInclude Include="..\include\caffe\layer_factory.hpp" />
     <ClInclude Include="..\include\caffe\loss_layers.hpp" />
     <ClInclude Include="..\include\caffe\net.hpp" />
     <ClInclude Include="..\include\caffe\neuron_layers.hpp" />
+    <ClInclude Include="..\include\caffe\python_layer.hpp" />
     <ClInclude Include="..\include\caffe\solver.hpp" />
     <ClInclude Include="..\include\caffe\syncedmem.hpp" />
     <ClInclude Include="..\include\caffe\util\benchmark.hpp" />
     <ClInclude Include="..\include\caffe\util\cudnn.hpp" />
+    <ClInclude Include="..\include\caffe\util\db.hpp" />
     <ClInclude Include="..\include\caffe\util\device_alternate.hpp" />
     <ClInclude Include="..\include\caffe\util\im2col.hpp" />
     <ClInclude Include="..\include\caffe\util\insert_splits.hpp" />

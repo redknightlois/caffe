@@ -10,6 +10,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffe-bin", "caffe-bin.vcxp
 		{537EF951-4B02-4103-A310-52A6F7C8D748} = {537EF951-4B02-4103-A310-52A6F7C8D748}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "compute_image_mean-bin", "compute_image_mean.vcxproj", "{EF6EE5A9-B0D2-4D33-9F88-B57A4D5E28A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537EF951-4B02-4103-A310-52A6F7C8D748} = {537EF951-4B02-4103-A310-52A6F7C8D748}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convert_mnist_data-bin", "convert_mnist_data.vcxproj", "{CEBDA94B-4B4D-4626-8027-749B41454014}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537EF951-4B02-4103-A310-52A6F7C8D748} = {537EF951-4B02-4103-A310-52A6F7C8D748}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -24,6 +34,14 @@ Global
 		{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}.Debug|x64.Build.0 = Debug|x64
 		{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}.Release|x64.ActiveCfg = Release|x64
 		{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}.Release|x64.Build.0 = Release|x64
+		{EF6EE5A9-B0D2-4D33-9F88-B57A4D5E28A7}.Debug|x64.ActiveCfg = Debug|x64
+		{EF6EE5A9-B0D2-4D33-9F88-B57A4D5E28A7}.Debug|x64.Build.0 = Debug|x64
+		{EF6EE5A9-B0D2-4D33-9F88-B57A4D5E28A7}.Release|x64.ActiveCfg = Release|x64
+		{EF6EE5A9-B0D2-4D33-9F88-B57A4D5E28A7}.Release|x64.Build.0 = Release|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454014}.Debug|x64.ActiveCfg = Debug|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454014}.Debug|x64.Build.0 = Debug|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454014}.Release|x64.ActiveCfg = Release|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454014}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

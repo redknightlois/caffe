@@ -65,6 +65,6 @@ void AccuracyLayer<Dtype>::Forward_cpu(const vector<Blob<Dtype>*>& bottom,
 }
 
 INSTANTIATE_CLASS(AccuracyLayer);
-REGISTER_LAYER_CLASS(Accuracy);
+
 
 }  // namespace caffe

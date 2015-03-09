@@ -14,6 +14,11 @@
 #include "caffe/solver.hpp"
 #include "caffe/util/benchmark.hpp"
 #include "caffe/util/io.hpp"
+#include "caffe/common_layers.hpp"
 #include "caffe/vision_layers.hpp"
+#include "caffe/loss_layers.hpp"
+#include "caffe/data_layers.hpp"
+#include "caffe/data_transformer.hpp"
+
 
 #endif  // CAFFE_CAFFE_HPP_

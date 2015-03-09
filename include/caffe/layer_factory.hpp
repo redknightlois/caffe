@@ -54,11 +54,10 @@ template <typename Dtype>
 class LayerRegistry {
  public:
   typedef shared_ptr<Layer<Dtype> > (*Creator)(const LayerParameter&);
-  typedef std::map<string, Creator> CreatorRegistry;
+  typedef std::map<string, Creator> CreatorRegistry;  
 
-  static CreatorRegistry& Registry() {
-    static CreatorRegistry* g_registry_ = new CreatorRegistry();
-    return *g_registry_;
+  static CreatorRegistry& Registry() {   	
+    return g_registry_;
   }
 
   // Adds a creator.
@@ -80,6 +79,9 @@ class LayerRegistry {
   }
 
  private:
+
+  static CreatorRegistry g_registry_;
+
   // Layer registry should never be instantiated - everything is done with its
   // static variables.
   LayerRegistry() {}

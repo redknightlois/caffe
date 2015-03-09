@@ -461,6 +461,6 @@ void WindowDataLayer<Dtype>::InternalThreadEntry() {
 }
 
 INSTANTIATE_CLASS(WindowDataLayer);
-REGISTER_LAYER_CLASS(WindowData);
+
 
 }  // namespace caffe

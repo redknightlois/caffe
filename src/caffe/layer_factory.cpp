@@ -9,7 +9,13 @@
 #include "caffe/python_layer.hpp"
 #endif
 
+
+caffe::LayerRegistry<float>::CreatorRegistry caffe::LayerRegistry<float>::g_registry_;
+caffe::LayerRegistry<double>::CreatorRegistry caffe::LayerRegistry<double>::g_registry_;
+
+
 namespace caffe {
+	
 
 // Get convolution layer according to engine.
 template <typename Dtype>
@@ -173,6 +179,40 @@ shared_ptr<Layer<Dtype> > GetPythonLayer(const LayerParameter& param) {
 
 REGISTER_LAYER_CREATOR(Python, GetPythonLayer);
 #endif
+
+REGISTER_LAYER_CLASS(Data);
+REGISTER_LAYER_CLASS(AbsVal);
+REGISTER_LAYER_CLASS(Accuracy);
+REGISTER_LAYER_CLASS(ArgMax);
+REGISTER_LAYER_CLASS(BNLL);
+REGISTER_LAYER_CLASS(Concat);
+REGISTER_LAYER_CLASS(ContrastiveLoss);
+REGISTER_LAYER_CLASS(Deconvolution);
+REGISTER_LAYER_CLASS(Dropout);
+REGISTER_LAYER_CLASS(DummyData);
+REGISTER_LAYER_CLASS(Eltwise);
+REGISTER_LAYER_CLASS(EuclideanLoss);
+REGISTER_LAYER_CLASS(Exp);
+REGISTER_LAYER_CLASS(Flatten);
+REGISTER_LAYER_CLASS(HDF5Data);
+REGISTER_LAYER_CLASS(HDF5Output);
+REGISTER_LAYER_CLASS(HingeLoss);
+REGISTER_LAYER_CLASS(Im2col);
+REGISTER_LAYER_CLASS(ImageData);
+REGISTER_LAYER_CLASS(InfogainLoss);
+REGISTER_LAYER_CLASS(InnerProduct);
+REGISTER_LAYER_CLASS(LRN);
+REGISTER_LAYER_CLASS(MemoryData);
+REGISTER_LAYER_CLASS(MultinomialLogisticLoss);
+REGISTER_LAYER_CLASS(MVN);
+REGISTER_LAYER_CLASS(Power);
+REGISTER_LAYER_CLASS(SigmoidCrossEntropyLoss);
+REGISTER_LAYER_CLASS(Silence);
+REGISTER_LAYER_CLASS(Slice);
+REGISTER_LAYER_CLASS(SoftmaxWithLoss);
+REGISTER_LAYER_CLASS(Split);
+REGISTER_LAYER_CLASS(Threshold);
+REGISTER_LAYER_CLASS(WindowData);
 
 // Layers that use their constructor as their default creator should be
 // registered in their corresponding cpp files. Do not register them here.

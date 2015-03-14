@@ -213,6 +213,7 @@ REGISTER_LAYER_CLASS(SoftmaxWithLoss);
 REGISTER_LAYER_CLASS(Split);
 REGISTER_LAYER_CLASS(Threshold);
 REGISTER_LAYER_CLASS(WindowData);
+REGISTER_LAYER_CLASS(PReLU);
 
 // Layers that use their constructor as their default creator should be
 // registered in their corresponding cpp files. Do not register them here.

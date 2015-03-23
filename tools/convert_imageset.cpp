@@ -14,6 +14,11 @@
 #include <utility>
 #include <vector>
 
+// port for Win32
+#ifdef _MSC_VER
+#define snprintf sprintf_s
+#endif
+
 #include "boost/scoped_ptr.hpp"
 #include "gflags/gflags.h"
 #include "glog/logging.h"

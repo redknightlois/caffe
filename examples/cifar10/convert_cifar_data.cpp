@@ -17,6 +17,11 @@
 #include "caffe/proto/caffe.pb.h"
 #include "caffe/util/db.hpp"
 
+// port for Win32
+#ifdef _MSC_VER
+#define snprintf sprintf_s
+#endif
+
 using caffe::Datum;
 using boost::scoped_ptr;
 using std::string;

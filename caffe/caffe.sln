@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffelib", "caffe.vcxproj", "{537EF951-4B02-4103-A310-52A6F7C8D748}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537EF951-4B02-4103-A310-52A6F7C8D748} = {537EF951-4B02-4103-A310-52A6F7C8D748}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffe-bin", "caffe-bin.vcxproj", "{AC9F07F6-67E6-4637-B4D7-13BD54FF1EE9}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -26,6 +29,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convert_imageset-bin", "con
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "extract_features-bin", "extract_features.vcxproj", "{EF6EE5A9-B3D2-4D33-9F88-B57A4D5EA8A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537EF951-4B02-4103-A310-52A6F7C8D748} = {537EF951-4B02-4103-A310-52A6F7C8D748}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "convert_cifar10_data-bin", "convert_cifar10_data.vcxproj", "{CEBDA94B-4B4D-4626-8027-749B41454024}"
 	ProjectSection(ProjectDependencies) = postProject
 		{537EF951-4B02-4103-A310-52A6F7C8D748} = {537EF951-4B02-4103-A310-52A6F7C8D748}
 	EndProjectSection
@@ -60,6 +68,10 @@ Global
 		{EF6EE5A9-B3D2-4D33-9F88-B57A4D5EA8A7}.Debug|x64.Build.0 = Debug|x64
 		{EF6EE5A9-B3D2-4D33-9F88-B57A4D5EA8A7}.Release|x64.ActiveCfg = Release|x64
 		{EF6EE5A9-B3D2-4D33-9F88-B57A4D5EA8A7}.Release|x64.Build.0 = Release|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454024}.Debug|x64.ActiveCfg = Debug|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454024}.Debug|x64.Build.0 = Debug|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454024}.Release|x64.ActiveCfg = Release|x64
+		{CEBDA94B-4B4D-4626-8027-749B41454024}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

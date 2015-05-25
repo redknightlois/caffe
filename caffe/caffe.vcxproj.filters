@@ -228,6 +228,12 @@
     <ClCompile Include="..\src\caffe\layers\prelu_layer.cpp">
       <Filter>Source Files\layers</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\caffe\layers\reshape_layer.cpp">
+      <Filter>Source Files\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\caffe\layers\spp_layer.cpp">
+      <Filter>Source Files\layers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="..\src\caffe\layers\concat_layer.cu">
@@ -421,14 +427,14 @@
     <ClInclude Include="..\include\caffe\util\device_alternate.hpp">
       <Filter>Header Files\util</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\caffe\layer_factory.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\caffe\python_layer.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\caffe</Filter>
     </ClInclude>
     <ClInclude Include="..\include\caffe\util\db.hpp">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\caffe\layer_factory.hpp">
+      <Filter>Header Files\caffe</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

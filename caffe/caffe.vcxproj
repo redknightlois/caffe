@@ -147,6 +147,7 @@
     <ClCompile Include="..\src\caffe\layers\power_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\prelu_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\relu_layer.cpp" />
+    <ClCompile Include="..\src\caffe\layers\reshape_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\sigmoid_cross_entropy_loss_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\sigmoid_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\silence_layer.cpp" />
@@ -154,6 +155,7 @@
     <ClCompile Include="..\src\caffe\layers\softmax_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\softmax_loss_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\split_layer.cpp" />
+    <ClCompile Include="..\src\caffe\layers\spp_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\tanh_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\threshold_layer.cpp" />
     <ClCompile Include="..\src\caffe\layers\window_data_layer.cpp" />
